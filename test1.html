@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+        <ul id="btn">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    <script>
+        'use strict';
+        // function area_of_circle(r,pi){
+        //     if(typeof pi!='undefined'){
+        //             return pi*r*r
+        //     }else{
+        //             return 3.14*r*r
+        //     }
+        // }
+        // console.log(Math.PI*3);
+        // if (area_of_circle(2) === 12.56 && area_of_circle(2, 3.1416) === 12.5664) {
+        //     alert('测试通过');
+        // } else {
+        //     alert('测试失败');
+        // }
+
+        // var count = 0;
+        //     var oldParseInt = parseInt; // 保存原函数
+
+        //     window.parseInt = function () {
+        //         count += 1;
+        //         return oldParseInt.apply(null, arguments); // 调用原函数
+        //     };
+
+        //     // 测试:
+        //     parseInt('10');
+        //     parseInt('20');
+        //     parseInt('30');
+        //     console.log(count); // 3
+        var btn = document.getElementById("btn"),
+            aLi=btn.getElementsByTagName("li");
+
+            function change(count) {
+                for (var i = 0; i < count; i++) {
+
+
+                    (function(i){
+                        aLi[i].onclick = function () {
+                            alert(i);
+                        }     
+                    })(i);
+
+
+
+                }
+            }
+            change(3);
+    </script>
+    
+</body>
+
+</html>

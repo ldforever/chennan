@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var arr=[1,2,3];
+        // Array.prototype.push=function (...rest) {
+        //     for (var i=0;i<rest.length;i++){
+        //         this[this.length]=rest[i];
+        //     }
+        //     return this.length;
+        // }
+        /*// console.log(arr.push(4,5,6));
+        function A() {
+            // this.names='111';    
+        }
+        function B(){
+
+        }
+        var arr=[];
+        A.prototype.names='124';
+        var a=new A();
+        alert(arr instanceof Array);*/
+       /* window.onload=function () {
+            var  oF=document.createElement('iframe');
+            document.body.appendChild(oF);
+            var iArray=window.frames[0].Array;
+
+            var a=new iArray;
+            alert(a.constuctor==Array);
+            alert(a instanceof Array);
+            alert(Object.prototype.toString.apply(a));
+        }*/
+
+      /*  window.onload=function () {
+                function CreatePerson(name,age) {//父类
+                    this.name=name;
+                    this.age=age;
+                }
+                CreatePerson.prototype.showName=function () {
+                    alert(this.name);
+                }
+                var a=new CreatePerson("小明","28");
+                a.showName();
+
+                function CreateStar(name,age,job) {
+                    CreatePerson.call(this,name,age);
+                    this.job=job;
+                }
+                 CreateStar.prototype =CreatePerson.prototype;
+                 var a1=new CreateStar("黄晓明","29","演员");
+                 a1.showName();
+        }*/
+        var a={
+                name:"chennan"
+        }
+        // var b=a;
+        var b={};
+        for (var attr in a){
+            b[attr]=a[attr]s;
+        }
+            b.name="hhh";
+            alert(a.name);
+    </script>  
+</body>
+</html>
