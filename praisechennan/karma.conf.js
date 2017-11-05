@@ -13,7 +13,10 @@ module.exports = function(config) {
         frameworks: ['jasmine'],
 
 
-        files: ['*.js'],
+        files: [
+            './index.js',
+            './index.spec.js'
+        ],
         //exclude 测试时，浏览器会忽略掉这个list里面的文件，不加载它们
         exclude: ['karma.conf.js'],
 

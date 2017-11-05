@@ -1,4 +1,4 @@
-//声明父类
+//声明一个父类
 class praiseButton {
     constructor(num, element) {
         //初始化构造 最初点击数为0
