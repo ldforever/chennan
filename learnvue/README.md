@@ -15,4 +15,12 @@ vue源码：https://github.com/vuejs/vue
                 data: {
                          message: 'Hello Vue!'
                     }
-            })     
+            })   
+              <br/>
+ ####
+### vue .js    的基本概念<br/>
+#### 1.全局api<br/> 
+#### 2.实例选项<br/> 
+#### 3.实例属性／方法 <br/>    
+#### 4.指令 <br/>
+#### 5.内置组件 <br/>   ####
