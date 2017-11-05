@@ -9,7 +9,7 @@ vue源码：https://github.com/vuejs/vue
          >1.构建函数
          >2.构造参数
          >3.参数选项   
-        >>``` javascript
+        ```javascript
             new Vue ({
                 el: '#app',
                 data: {
