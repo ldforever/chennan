@@ -4,4 +4,38 @@
 webpck babel
 ####  流程图     <br/>
 
-1.{webpack} :heavy_minus_sign:编译工具:heavy_minus_sign: {babel}:heavy_minus_sign:浏览器段兼容包:heavy_minus_sign:{ES5-shim,babel-polyfill}:heavy_minus_sign::heavy_minus_sign:{兼容性好的代码}
+1.{webpack} :heavy_minus_sign:编译工具:heavy_minus_sign: {babel}:heavy_minus_sign:浏览器段兼容包:heavy_minus_sign:{ES5-shim,babel-polyfill}:heavy_minus_sign::heavy_minus_sign:{兼容性好的代码}  <br/>
+
+
+#### sdk 技术应对  <br/>
+
+1.通过js sdk的方式，由一个团队统一开发和维护，保证功能的统一和修改的同步；  <br/>
+2.支持pc和移动端，因此体积要小，要分包，不能有依赖；  <br/>
+3.js sdk要包含全部的业务逻辑，但不包含具体样式，由下游业务方自行定义。  <br/>
+
+
+#### 前端指标  <br/>
+1.浏览器兼容IE8以上；  <br/>
+2.支持pc和移动端，大小不超过30kb；  <br/>
+3.支持多种引用方式：直接引用，commonJS，AMD。  <br/>
+
+
+#### 前端架构设计  <br/>
+######自顶向下，由外向内  <br/>
+                    1.对外的api接口设计；  <br/>
+                    2.模块的划分与关联；  <br/>
+                    3.模块的划分与一般性套路；  <br/>
+#######前端对外api设计要求  <br/>
+                    简单易用，封装性，灵活性  <br/> 
+                                1.暴露什么样的接口？（类or普通函数or对象）  <br/>
+                                2.有哪些配置项？  <br/>
+                                3.默认值是什么？  <br/>
+ #######如何编写公共模块  <br/>
+                    1.对外暴露函数：单一功能，且无内部状态；  <br/>
+                    2.对外暴露对象：无关联的功能集合；  <br/>
+                    3.对外暴露class（构造函数）：互相关联的功能集合或存在内部状态的功能  <br/>
+#######模块的划分与关联；  <br/>
+#######如何编写业务模块；  <br/>
+                    1.init:初始化，用于接受参数和初始值；  <br/>
+                    2.render：渲染；  <br/>
+                    3.event：事件绑定；  <br/>                                          
