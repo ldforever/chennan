@@ -1,4 +1,4 @@
-## js sdk学习以及demo开发  <br/>
+##js sdk学习以及demo开发  <br/>
 
 ####需要的工具  <br/>
 webpck babel
@@ -7,7 +7,7 @@ webpck babel
 1.{webpack} :heavy_minus_sign:编译工具:heavy_minus_sign: {babel}:heavy_minus_sign:浏览器段兼容包:heavy_minus_sign:{ES5-shim,babel-polyfill}:heavy_minus_sign::heavy_minus_sign:{兼容性好的代码}  <br/>
 
 
-#### sdk 技术应对  <br/>
+####sdk 技术应对  <br/>
 
 1.通过js sdk的方式，由一个团队统一开发和维护，保证功能的统一和修改的同步；  <br/>
 2.支持pc和移动端，因此体积要小，要分包，不能有依赖；  <br/>
