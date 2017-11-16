@@ -38,4 +38,5 @@ webpck babel
 #######如何编写业务模块；  <br/>
                     1.init:初始化，用于接受参数和初始值；  <br/>
                     2.render：渲染；  <br/>
-                    3.event：事件绑定；  <br/>                                          
+                    3.event：事件绑定；  <br/> 
+                                                             
